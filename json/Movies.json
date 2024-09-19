@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "logo":"https://static.cdn.asset.filimo.com/flmt/mov_logo_148098_610.png?width=400&quality=85&secret=FkIlWP3F5cp3Kr8c7XExKQ",
+        "MoviesName": "ستون ۱۴",
+        "imageurl": "https://static.cdn.asset.filimo.com/flmt/mov_148098_181296.jpg?width=165&quality=85&secret=gd0DfcV32I-fQf3tFxj31A",
+        "background":"https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_148098_727.jpg?width=1920&quality=80&secret=tEZkV448AWUwHrnppqVudg",
+        "director":" امیرحسین همتی",
+        "description":" ساناز و یاشار وقتی می ترسند، بازی می کنند، این بار با زندگی جلال..…",
+        "sort":"درام"
+        },
+        {
+        "id": "2",
+        "logo":"https://static.cdn.asset.filimo.com/flmt/mov_logo_147944_566.png?width=400&quality=85&secret=_u6ENpUidNkGbnOr3BsJlQ",
+        "MoviesName": "پالتو شتری",
+        "imageurl": "https://static.cdn.asset.filimo.com/flmt/mov_147944_175967.jpg?width=165&quality=85&secret=ju8_Uf2DFpEvNaTERV_S0w",
+        "background":"https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_147944_551.jpg?width=1920&quality=80&secret=eeDw_JdFTFnN3EKu-gmL5g",
+        "director":"مهدی علی میرزایی",
+        "description":"این فیلم دربارهٔ پسری جوان است که در رشته فلسفه درس می خواند.",
+        "sort":"کمدی"
+        },
+        {
+        "id": "3",
+        "logo":"https://static.cdn.asset.filimo.com/flmt/mov_logo_147067_517.png?width=400&quality=85&secret=P9mZkXM07S2Vwsl5Waxb_Q",
+        "MoviesName": "پالایشگاه",
+        "imageurl": "https://static.cdn.asset.filimo.com/flmt/mov_147067_158271.jpg?width=165&quality=85&secret=9KYGIBU5GhRXXGuWwV5vDg",
+        "background":"https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_147067_905.jpg?width=1920&quality=80&secret=iJ5fSLGBPjCI4KbzWOFQUg",
+        "director":" مهرداد خوشبخت",
+        "description":"در سال ۱۳۵۹ همزمان با جنگ تحمیلی، تعدادی از مهندسین پالایشگاه نفت آبادان در تلاش هستند با امکانات و تجهیزاتی که در داخل انبارهای آن است، پالایشگاه‌های دیگر را ترمیم کنند.",
+        "sort":"جنایی"
+        },
+        {
+        "id": "4",
+        "logo":"https://static.cdn.asset.filimo.com/flmt/mov_logo_145894_731.png?width=400&quality=85&secret=vCkidaFY489vNyDkpYm2ZQ",
+        "MoviesName": "گیجگاه",
+        "imageurl": "https://static.cdn.asset.filimo.com/flmt/mov_145894_154677.jpg?width=165&quality=85&secret=mba5KX_Lyr0cqvY0m_vx3w",
+        "background":"https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_145894_370.jpg?width=1920&quality=80&secret=qRdbJKR4SzCT7VY93OVs5Q",
+        "director":"عادل تبریزی",
+        "description":"در دهه هفتاد شمسی، یک معلم ادبیات و ورزش که مربی کلاس کاراته هم هست، به مادر مطلقه یکی از شاگردان خود علاقه مند می شود.  . ",
+        "sort":"عاشقانه"
+        },
+        {
+        "id": "5",
+        "logo":"https://static.cdn.asset.filimo.com/flmt/mov_logo_146824_457.png?width=400&quality=85&secret=1vGrMUwtRCEJ7faXqHimTQ",
+        "MoviesName": "هاوایی",
+        "imageurl": "https://static.cdn.asset.filimo.com/flmt/mov_146824_164351.jpg?width=165&quality=85&secret=2n5NbxP2FUcyo6DfsoRo5A",
+        "background":"https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_146824_370.jpg?width=1920&quality=80&secret=QNIwN_y4I919PUDRXHMkQg",
+        "director":"بهمن گودرزی",
+        "description":"هاوایی داستان ورزشکاری است که برای پیشرفت در رشته ورزشی خود قصد دارد پناهندگی کشوری خارجی را بگیرد  ",
+        "sort":"کمدی"
+        }
+]

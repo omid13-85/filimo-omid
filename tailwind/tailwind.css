@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: IRANsans;
+    src: url("/dist/font/IRANSans-web.eot");
+    src: url("/dist/font/IRANSans-web.ttf");
+    src: url("/dist/font/IRANSans-web.woff");
+    src: url("/dist/font/IRANSans-web.woff2");
+  }
+  @layer components{
+    *{
+        direction: rtl;
+        font-family:IRANsans;
+        
+    }
+    .around:checked{
+      transform: translateX(20px);
+    }
+    .karim{
+      
+          box-shadow: inset 0px -50px 80px 50px #141515;
+        
+    }
+    .karimbox{
+      
+      box-shadow: inset -300px 60px 80px 100px #141515;
+    
+    }
+    .animationbox{
+      box-shadow: inset 400px -300px 80px 120px #141515;
+    }
+    .animationbox2{
+      box-shadow: inset 120px -300px 80px -50px #141515;
+    }
+    .popularbox{
+      
+      box-shadow: 0 5px 5px #141515;
+    
+    }
+    .border{
+      border: #1B1114 solid 1px;
+    }
+    .movement{
+      transform: translateX(500px);
+    }
+    .prevmove{
+      margin-right: 1080px;
+    }
+    .nextmove{
+      margin-left: 60px ;
+    }
+    
+    .Slider{
+         width: 100%;
+         height: 400px;
+         
+         .swiper {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          row-gap: 5px;
+          
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #151515;
+          display: flex;
+          gap: 5px;
+          width: fit-content;
+          height: 244px;
+          justify-content: center;
+          align-items: center;
+          
+          
+        }
+    
+        .swiper-slide img {
+          display: flex;
+          row-gap: 5px;
+          width: 165px;
+          height: 210px;
+          object-fit: cover;
+          
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next{
+          width: 35px;
+          height: 35px;
+          background-color: #151515;
+          border-radius: 50%; 
+        }
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+          font-size: 12px;
+          color: whitesmoke;
+          font-weight: bold;
+        }
+    }
+    .Comment{
+      width: 100%;
+      height: 323px;
+      .swiper {
+        width: 100%;
+        height: fit-content;
+
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+      .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        width: 35px;
+        height: 35px;
+        background-color: black;
+        border-radius: 50%; 
+        transform: translateY(-103px);
+      }
+      .swiper-button-prev{
+        transform: translate(-280px , -103px)
+      }
+      .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        font-size: 12px;
+        color: whitesmoke;
+        font-weight: bold;
+      }
+    }
+  .Box{
+    box-shadow:  25px 25px 80px black  inset;
+  }
+  .svg__prem{
+    scale: 0.7;
+    rotate: 45deg;
+  }
+
+
+    #Background {
+      transition: background-image 1s linear;
+    }
+    .cinematic-cover{
+        width: 100%;
+        height: 200px;
+        background-color: #0D0D0D;
+        margin: 50px auto;   
+        display: none;
+    }
+    .serialic-cover{
+        width: 100%;
+        height: 200px;
+        background-color:#0D0D0D;
+        margin: 50px auto;   
+        display: none;
+        
+    }
+    
+
+    .active{
+      display: block;
+    }
+    @keyframes fadeIn {
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+    }
+    @keyframes fadeOut {
+        0%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+    }
+   
+    .fadeIn{
+      animation-name: fadeIn ;
+      animation-duration: 500ms;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-fill-mode: forward;
+    }
+    .fadeOut{
+      animation-name: fadeOut ;
+      animation-duration: 500ms;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-fill-mode: forward;
+    }
+   
+}
