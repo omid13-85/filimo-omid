@@ -200,3 +200,16 @@
     }
    
 }
+.Cinema-API{
+  background-image: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.online-cenema {
+  background-image: url("https://www.filimo.com/assets/web/ui/img-EO6bydFk6Yq4pMaEiCWiw/campaigns/nosub-v_new/bg-cinama.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}

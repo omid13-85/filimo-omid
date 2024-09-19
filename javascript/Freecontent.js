@@ -1,7 +1,7 @@
 let Slider = async ()=>{
     let slider = ""
     try {
-        let data = await fetch("https://aliahanin.github.io/github.api/json/Freecontent.json")
+        let data = await fetch("https://omid13-85.github.io/db.-filimo.json/json/free_m.json")
         let res = await data.json();
         slider = res.map((item) =>{
             return` <div class="swiper-slide  mt-5 rounded-xl relative  ">
@@ -13,7 +13,7 @@ let Slider = async ()=>{
                     </svg>
                   <p class="text-green-400 text-[11px]">${item.logo}</p>
                 </div>
-                <p class="text-[11px] text-[#ffffff] absolute bottom-0  ">${item.Name}</p>            
+                <p class="text-[11px] text-[#ffffff] absolute bottom-0  ">${item.title}</p>            
             </div>`
         });
         document.querySelector("#Free-Content").insertAdjacentHTML("afterbegin" , slider.join(""))

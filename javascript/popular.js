@@ -62,49 +62,42 @@ btnserial.addEventListener("click" , () =>{
       }, 50)
 })
 
+
 let seriesClickHandler = (index) => {
-  let {background , SeriesName , logo , director , description , imageseason1 , imageseason2 , imageseason3 , imageseason4 , imagelock , episode1 , episode2 , episode3 , episode4} = series[index];
-  backgroundImage.style.backgroundImage = `url(${background})`;
-  boxName.textContent = SeriesName;
-  boxLogo.src = logo;
-  boxDic.textContent = `کارگردان : ${director}`;
-  boxDec.textContent = description;
-  Imageseason1.style.backgroundImage = `url(${imageseason1})`;
-  Imageseason2.style.backgroundImage = `url(${imageseason2})`;
-  Imageseason3.style.backgroundImage = `url(${imageseason3})`;
-  Imageseason4.style.backgroundImage = `url(${imageseason4})`;
-  Imagelock.style.image = imagelock;
-  Episode1.textContent = episode1;
-  Episode2.textContent = episode2;
-  Episode3.textContent = episode3;
-  Episode4.textContent = episode4;
+  let {backgroundS , NameSe , logo , dic , about} = movies[index];
+  backgroundImagecinema.style.backgroundImage = `url(${backgroundS})`;
+  boxNamecinema.textContent = NameSe;
+  boxLogocinema.src = logo;
+  boxDiccinema.textContent = `کارگردان : ${dic}`;
+  boxDeccinema.textContent = about;
   
 };
+
 let moviesClickHandler = (index) => {
-  let {background , MoviesName , logo , director , description} = movies[index];
-  backgroundImagecinema.style.backgroundImage = `url(${background})`;
-  boxNamecinema.textContent = MoviesName;
+  let {background_img , title , logo , dic , about} = movies[index];
+  backgroundImagecinema.style.backgroundImage = `url(${background_img})`;
+  boxNamecinema.textContent = title;
   boxLogocinema.src = logo;
-  boxDiccinema.textContent = `کارگردان : ${director}`;
-  boxDeccinema.textContent = description;
+  boxDiccinema.textContent = `کارگردان : ${dic}`;
+  boxDeccinema.textContent = about;
   
 };
 
 
 
 let Movie = async () => {
-  await axios.get("https://aliahanin.github.io/github.api/json/Series.json").then((res)=>{
+  await axios.get("https://omid13-85.github.io/db.-filimo.json/json/series.json").then((res)=>{
     series = res.data
   });
-  await axios.get("https://aliahanin.github.io/github.api/json/Movies.json").then((res)=>{
+  await axios.get("https://omid13-85.github.io/db.-filimo.json/json/movies.json").then((res)=>{
     movies = res.data
   });
   series.forEach((item, index) => {
-    seriesDiv.innerHTML += `<div class="min-w-[130px] min-h-[150px] desktop:min-w-[163px] desktop:min-h-[221px] hover:scale-110 transition-all duration-300 hover:border-2 hover:border-white   bg-no-repeat cursor-pointer   bg-center bg-cover rounded-lg" onclick=" seriesClickHandler(${index})" style="background-image: url(${item.image});">
+    seriesDiv.innerHTML += `<div class="min-w-[130px] min-h-[150px] desktop:min-w-[163px] desktop:min-h-[221px] hover:scale-110 transition-all duration-300 hover:border-2 hover:border-white   bg-no-repeat cursor-pointer   bg-center bg-cover rounded-lg" onclick=" seriesClickHandler(${index})" style="background-image: url(${item.images});">
     </div>`;
   });
   movies.forEach((item, index) => {
-    moviesDiv.innerHTML += `<div class="min-w-[130px] min-h-[150px] desktop:min-w-[163px] desktop:min-h-[221px] hover:scale-110 transition-all duration-300 hover:border-2 hover:border-white   bg-no-repeat cursor-pointer   bg-center bg-cover rounded-lg" onclick=" moviesClickHandler(${index})" style="background-image: url(${item.imageurl});">
+    moviesDiv.innerHTML += `<div class="min-w-[130px] min-h-[150px] desktop:min-w-[163px] desktop:min-h-[221px] hover:scale-110 transition-all duration-300 hover:border-2 hover:border-white   bg-no-repeat cursor-pointer   bg-center bg-cover rounded-lg" onclick=" moviesClickHandler(${index})" style="background-image: url(${item.image});">
     </div>`;
   });
 }
